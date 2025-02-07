@@ -1,0 +1,118 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2d3436, #0f2027);
+    color: #fff;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    padding: 20px;
+    background: #1e272e;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #74b9ff;
+}
+
+/* Calculator styling */
+.calculator {
+    margin-top: 10px;
+}
+
+#screen {
+    width: 100%;
+    height: 50px;
+    background: #2c3e50;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* Button grid */
+table {
+    margin: 10px auto;
+    width: 100%;
+    border-spacing: 10px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #4e54c8, #8f94fb);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover and Active Effects */
+button:hover {
+    background: linear-gradient(145deg, #8f94fb, #4e54c8);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+    background: linear-gradient(145deg, #4e54c8, #3c40c6);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Special Button Styling */
+button:nth-child(4n) { /* Right-side operators */
+    background: linear-gradient(145deg, #ff6b6b, #ee5253);
+}
+
+button:nth-child(4n):hover {
+    background: linear-gradient(145deg, #ee5253, #ff6b6b);
+}
+
+button:nth-child(4n):active {
+    background: linear-gradient(145deg, #c0392b, #e74c3c);
+}
+
+/* Equal Button Styling */
+button:last-child {
+    background: linear-gradient(145deg, #27ae60, #2ecc71);
+}
+
+button:last-child:hover {
+    background: linear-gradient(145deg, #2ecc71, #27ae60);
+}
+
+button:last-child:active {
+    background: linear-gradient(145deg, #1e8449, #229954);
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+
+    button {
+        height: 50px;
+        font-size: 18px;
+    }
+}
